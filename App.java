@@ -7,10 +7,7 @@ import java.util.concurrent.TimeUnit;
 public class App {
 
 	public static void main(String[] args) {
-		
-		Box[] arr = {new Box(6,12,15), new Box(8,18,20), new Box(1,11,15)};
-
-		
+				
 		Box[] input = new Box[25];
 		for (int i = 0; i < input.length; i++) {
 			Random r = new Random();
