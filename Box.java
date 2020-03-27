@@ -22,6 +22,12 @@ public class Box implements Comparable<Box>{
 		return depth;
 	}
 	
+	/**
+	 * Not sure where this is used, but depending on the case, this implementation may not
+	 * be what you are looking for
+	 * For example, 5 x 3 block cannot be put on top of 4 x 4 box, even though it has less area.
+	 * Further, compareTo should generally return 1, 0 or -1, not other values.
+	 */
 	public int compareTo(Box o) {
 		int area = o.depth*o.width;
 		int thisArea = this.depth*this.width;
